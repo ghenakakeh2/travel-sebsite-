@@ -1,0 +1,1004 @@
+@charset "UTF-8";
+
+* {
+  font-family         : "Open Sans", sans-serif;
+  font-family         : "Poppins", sans-serif;
+  font-family         : "Roboto", sans-serif;
+  font-family         : "Roboto Condensed", sans-serif;
+  margin              : 0;
+  padding             : 0;
+  border              : none;
+  -webkit-box-sizing  : border-box;
+  box-sizing          : border-box;
+  text-decoration     : none;
+  outline             : none;
+  text-transform      : capitalize;
+  -webkit-transition  : all 0.3s linear;
+  transition          : all 0.3s linear;
+  box-sizing          : border-box;
+}
+
+a {
+  text-decoration  : none;
+}
+
+:root {
+  --blue        : #29d9d5;
+  --black       : #111;
+  --white       : #fff;
+  --lite-color  : #aaa;
+  --bg-color    : #222;
+  --black-bg    : rgba(17, 17, 17, .7);
+  --border      : 2px solid var(--blue);
+
+
+}
+
+
+#home,
+#about,
+#destination,
+#services,
+#gallery,
+#book,
+#banner,
+#review {
+  padding-top     : 5%;
+  padding-bottom  : 5%;
+
+
+}
+
+html {
+  font-size           : 62.5%;
+  overflow-x          : hidden;
+  scroll-behavior     : smooth;
+  scroll-padding-top  : 9rem;
+}
+
+html::-webkit-scrollbar-track {
+  background  : var(--black);
+}
+
+html::-webkit-scrollbar {
+  width  : 1rem;
+}
+
+html::-webkit-scrollbar-thumb {
+  background  : var(--blue);
+}
+
+body {
+  background  : var(--black);
+  overflow    : hidden;
+}
+
+.heading {
+  text-align     : center;
+  margin-bottom  : 4rem;
+}
+
+.heading span {
+  font-size  : 3rem;
+  color      : var(--blue);
+}
+
+.heading h1 {
+  font-size  : 5rem;
+
+  margin-top  : 0.5rem;
+  color       : var(--white);
+}
+
+.bouttn {
+  margin-top     : 1rem;
+  display        : inline-block;
+  padding        : 1rem 2rem;
+  font-size      : 1.7rem;
+  color          : var(--blue);
+  background     : none;
+  border-radius  : 5rem;
+  border         : 2px solid var(--blue);
+  cursor         : pointer;
+
+}
+
+.bouttn:hover {
+  background-color  : var(--blue);
+  color             : var(--black);
+}
+
+/* start header */
+.navbar {
+  z-index     : 2000;
+  padding     : 10px;
+  transition  : .5s;
+  background  : none;
+
+
+}
+
+.navbar.background {
+  background-color  : var(--bg-color) !important;
+}
+
+.navbar .navbar-brand .logo {
+  font-size    : 2.5rem;
+  color        : var(--white);
+  font-weight  : bolder;
+}
+
+.navbar .navbar-brand .logo i {
+  color          : var(--blue);
+  padding-right  : 0.5rem;
+}
+
+
+.navbar .nav-item a {
+
+
+  color      : var(--lite-color) !important;
+  font-size  : 1.7rem;
+  display    : inline-block;
+
+
+
+
+}
+
+.navbar .nav-item a:hover {
+  color  : var(--blue) !important;
+}
+
+.navbar .search {
+  height        : 30px;
+  border-left   : 2px solid var(--blue) !important;
+  margin-right  : 10px;
+}
+
+.navbar .search i {
+  color       : var(--lite-color) !important;
+  font-size   : 20px;
+  margin-top  : 5px;
+  cursor      : pointer;
+
+}
+
+.navbar .search i:hover {
+  color  : var(--blue) !important;
+
+}
+
+.navbar .bouttn {
+  padding  : 10px;
+
+}
+
+/* end header */
+
+
+
+/* start home section */
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #2696E9;
+
+
+}
+
+.home:before {
+  z-index: 777;
+  content: '';
+  position: absolute;
+  background: rgba(3, 96, 251, 0.3);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+.home .slide .content {
+  position: absolute;
+  z-index: 888;
+  color: var(--white);
+  top: 22%;
+  width: 70%;
+  margin-top: 50px;
+  display: none;
+
+  left: 51%;
+  transform: translateX(-50%);
+
+
+}
+
+.home .slide .content.active {
+  display: block;
+
+
+}
+
+.home .content h1 {
+
+
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+
+  margin-bottom: 30px;
+}
+
+
+
+.home .slide .content p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 2;
+  width: 80%;
+}
+
+.home .slide .video-slide .content a {
+
+  font-weight: 500;
+
+
+}
+
+.home video {
+  z-index: 000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+.video-slide {
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+
+}
+
+.video-slide.active {
+  clip-path: circle(150% at 0 50%);
+  transition:clip-path  2s ease;
+}
+
+
+
+.home .left,
+.home .right {
+  width: 100px;
+  opacity: 0.5;
+  color: var(--white);
+  z-index: 10000;
+  position: absolute;
+  font-size: 40px;
+  text-align: center;
+  padding: 22% 0;
+  cursor: pointer;
+
+}
+
+.home .left {
+  left: 0;
+}
+
+.home .right {
+  right: 0;
+}
+
+.home .left:hover,
+.home .right:hover {
+  background-color: rgba(201, 197, 197, 0.503);
+  opacity: 1;
+}
+
+
+/* end home section */
+
+/* start about section */
+
+.about .box-continer {
+  margin-top: 40px;
+}
+
+
+
+.about .video-continer .video {
+  width: 100%;
+}
+
+.about .video-continer .conroles {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.about .video-continer .conroles span {
+  height: 2rem;
+  width: 2rem;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: var(--white);
+  cursor: pointer;
+  margin: 0.7rem;
+}
+
+.about .video-continer .conroles span:hover {
+  background-color: var(--blue);
+}
+
+.about .content {
+  margin-bottom: 5rem;
+  
+  margin-left: 30px;
+}
+
+.about .content span {
+  color: var(--blue);
+  font-size: 2.5rem;
+}
+
+.about .content h3 {
+  color: var(--white);
+  font-size: 4rem;
+  margin-top: 0.5rem;
+}
+
+.about .content p {
+  line-height: 2rem;
+  color: var(--lite-color);
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+
+/* end about section */
+
+
+/* start destination section */
+.destination .box-continer {
+  margin-top  : 1.5rem;
+  text-align  : center;
+  width       : 100%;
+
+
+
+}
+
+.destination .box-continer .box {
+  overflow          : hidden;
+  border-radius     : 1rem;
+  background-color  : var(--bg-color);
+
+  width   : 30rem;
+  height: 400px;
+  margin  : 1.5rem auto;
+
+
+}
+
+.destination .box-continer .box:hover img {
+
+  transform  : scale(1.1);
+}
+
+.destination .box-continer .box .imge {
+  height  : 20rem;
+  width   : 100%;
+}
+
+.destination .box-continer .box .imge img {
+  height  : 100%;
+  width   : 100%;
+
+}
+
+.destination .box-continer .box .content {
+  padding     : 2rem;
+  text-align  : center;
+  height: 50%;
+
+}
+
+.destination .box-continer .box .content h3 {
+  color      : var(--white);
+  font-size  : 2rem;
+}
+
+.destination .box-continer .box .content p {
+  padding      : 1rem 0;
+  font-size    : 1.4rem;
+  color        : var(--lite-color);
+  line-height  : 2;
+  height: 50%;
+ 
+}
+
+.destination .box-continer .box .content a {
+  font-size  : 1.7rem;
+  color      : var(--blue);
+;
+}
+
+.destination .box-continer .box .content a:hover {
+  padding-left  : 1.5rem;
+}
+
+/* end destination section */
+
+
+/* start services section */
+.services .box-continer {
+  margin-top  : 1.5rem;
+  text-align  : center;
+  width       : 100%;
+}
+
+.services .box-continer .box {
+  padding        : 3rem;
+  border-radius  : 1rem;
+  background     : var(--bg-color);
+  text-align     : center;
+  margin         : 1rem auto;
+}
+
+.services .box-continer .box:hover {
+  border  : 1px solid var(--blue);
+}
+
+.services .box-continer .box h3 {
+  font-size  : 2rem;
+  color      : var(--white);
+}
+
+.services .box-continer .box i {
+  font-size      : 5rem;
+  color          : var(--blue);
+  margin-bottom  : 1rem;
+}
+
+.services .box-continer .box p {
+  padding      : 1rem 0;
+  font-size    : 1.4rem;
+  line-height  : 2;
+  color        : var(--lite-color);
+}
+
+/* end services section   */
+
+/* start gallary section */
+.gallery .box-container {
+  columns             : 3 25rem; 
+  column-gap          : 1.5rem;
+
+}
+
+.gallery .box-container .box {
+  margin-bottom                : 1rem;
+  /* break-inside                 : avoid; */
+  position                     : relative;
+}
+
+.gallery .box-container .box img {
+  width          : 100%;
+  border-radius  : 1rem;
+  margin-bottom  : 1rem;
+}
+
+.gallery .box-container .box .overlay {
+
+  position          : absolute;
+  width             : 100%;
+  height            : 200px;
+  bottom            : 10px;
+  border-radius     : 1rem;
+  background-color  : none;
+  text-align        : center;
+  display           : flex;
+  flex-direction    : column;
+  align-items       : center;
+  justify-content   : center;
+
+  transition  : height 450ms;
+  /* overflow    : hidden; */
+}
+.gallery .box-container .box:hover .overlay {
+  height            : 98%;
+  background-color  : rgba(3, 96, 251, 0.3);
+  color             : var(--bg-color);
+  opacity           : 0.9;
+
+}
+
+.gallery .box-container .box .overlay .content {
+  display  : none;
+}
+.gallery .box-container .box:hover .content {
+  display  : block;
+}
+
+
+.gallery .box-container .box span {
+  font-size  : 3rem;
+  color      : var(--white);
+
+
+
+
+}
+
+.gallery .box-container .box p {
+  font-size  : 2rem;
+
+  margin-top  : .5rem;
+  font-size   : 2rem;
+  color       : var(--white);
+
+}
+
+
+
+
+
+/* end gallary section */
+
+
+
+
+
+
+
+
+
+/* start back section  */
+.book {
+  position            : relative;
+  padding-top         : 100px;
+  padding-bottom      : 100px;
+  transition          : 0.5s;
+
+}
+
+.book h2 {
+  color       : var(--white);
+  font-size   : 30px;
+  text-align  : center;
+}
+
+.book h2 span {
+  color  : var(--blue);
+}
+
+.book .box-continer {
+  color    : var(--white);
+  display  : -webkit-box;
+  display  : -ms-flexbox;
+
+
+  justify-content  : space-between;
+
+  margin-top  : 50px;
+
+
+
+}
+
+.book .box-continer .book-box {
+  width   : 100%;
+  height  : 100%;
+
+
+  background-color  : #f6f6f6;
+
+
+}
+
+.book .box-continer .book-box .add-Reservation {
+  padding           : 25px;
+  background-color  : var(--blue);
+  position          : relative;
+}
+
+.book .box-continer .book-box .add-Reservation .plus {
+  position            : absolute;
+  height              : 40px;
+  width               : 40px;
+  background-color    : var(--white);
+  right               : 12px;
+  border-radius       : 50%;
+  line-height         : 40px;
+  text-align          : center;
+  color               : var(--blue);
+  font-size           : 38px;
+  transition          : transform 0.3s;
+  top                 : 4px;
+  cursor              : pointer;
+}
+
+.book .box-continer .book-box .add-Reservation .plus:hover {
+  transform          : rotate(90deg);
+}
+
+.book .box-continer .book-box .Reservation-content {
+  padding  : 20px;
+  color    : black;
+}
+
+.book .box-continer .book-box .Reservation-content .discrbtion {
+  display           : flex;
+  justify-content   : space-between;
+  height            : 50px;
+  width             : 92%;
+}
+
+.book .box-continer .book-box .Reservation-content .discrbtion span {
+  display     : inline-block;
+  font-size   : 20px;
+  height      : 30px;
+  width       : 300px;
+  margin-top  : 15px;
+}
+
+.book .box-continer .book-box .Reservation-content .no-Reservation-massage {
+  color      : #777;
+  font-size  : 15px;
+}
+
+.book .box-continer .book-box .Reservation-content .no-Reservation-massage>span {
+  display           : block;
+  background-color  : var(--white);
+  padding           : 10px;
+  margin-bottom     : 10px;
+}
+
+.book .box-continer .book-box .Reservation-content .Reservation-box {
+  display           : flex;
+ 
+  justify-content   : space-between;
+  height            : 50px;
+}
+
+.book .box-continer .book-box .Reservation-content .Reservation-box span {
+  display     : inline-block;
+  font-size   : 20px;
+  height      : 30px;
+  width       : 300px;
+  margin-top  : 15px;
+}
+
+.book .box-continer .book-box .Reservation-content .Reservation-box .delete {
+  float          : right;
+  width          : 100px;
+  color          : red;
+  font-size      : 17px;
+  font-weight    : bold;
+  border-radius  : 4px;
+  cursor         : pointer;
+  text-align     : center;
+}
+
+.book .box-continer .book-box .Reservation-content .Reservation-box .modify {
+
+  width  : 100px;
+
+  font-size      : 17px;
+  font-weight    : bold;
+  border-radius  : 4px;
+  cursor         : pointer;
+  text-align     : center;
+  padding        : 0 10px;
+  color          : var(--bg-color);
+}
+
+.book .box-continer .imge {
+  width  : 100%;
+
+}
+
+.book .box-continer .imge img {
+  width   : 100%;
+  height  : 300px;
+}
+
+.book .book-form {
+  display             : none;
+  width               : 60%;
+  margin              : 1rem auto;
+  margin-top          : -5rem;
+  background          : var(--bg-color);
+  border-radius       : 1rem;
+  border              : 1px solid var(--blue);
+  box-shadow          : 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
+  padding             : 3rem 2rem;
+  z-index             : 100;
+  position            : absolute;
+  left                : 50%;
+  top                 : 50%;
+  transition          : 0.5s;
+
+  transform           : translate(-50%, -50%);
+}
+
+.book .book-form.active {
+  display  : block;
+}
+
+.book .book-form form {
+
+  gap    : 1.5rem;
+  width  : 100%;
+}
+
+
+.book .book-form form div .inputbox {
+  width  : 100%;
+}
+
+.book .book-form form .inputbox span {
+  font-size  : 1.4rem;
+  color      : var(--lite-color);
+}
+
+.book .book-form form .inputbox input {
+  width           : 100%;
+  padding         : 1.2rem 1.3rem;
+  border-radius   : 5rem;
+  border          : 2px solid var(--blue);
+  font-size       : 1.6rem;
+  color           : var(--lite-color);
+  text-transform  : none;
+  background      : none;
+  margin-top      : 1rem;
+}
+
+.book .book-form form .save-div {
+
+  text-align  : center;
+
+}
+
+.book .book-form form .save-div .bouttn {
+
+  margin      : 20px auto;
+  text-align  : center;
+  font-size   : 20px;
+  padding     : 1rem 3rem;
+
+}
+
+.book .book-form form .close-form {
+  color             : var(--white);
+  font-size         : 30px;
+  border-radius     : 50%;
+  width             : 40px;
+  height            : 40px;
+  text-align        : center;
+  cursor            : pointer;
+  position          : absolute;
+  right             : -7px;
+  top               : -10px;
+  background-color  : var(--blue);
+}
+
+/* end back section */
+/* start review section */
+
+
+.review .content span {
+  font-size: 3rem;
+  color: var(--blue);
+}
+
+.review .content h3 {
+  font-size: 3rem;
+  color: var(--white);
+}
+
+.review .content p {
+  font-size: 1.4rem;
+  color: var(--lite-color);
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+
+
+.review .box-container .box {
+
+  border-radius: 1rem;
+  padding: 2rem;
+  background: var(--bg-color);
+  border: 0.2rem solid var(--bg-color);
+  margin: 10px;
+}
+
+.review .box-container .box:hover {
+  border: 0.2rem solid var(--blue);
+}
+
+.review .box-container .box p {
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+  line-height: 2;
+  color: var(--lite-color);
+}
+
+.review .box-container .box .user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.review .box-container .box .user img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.review .box-container .box .user h3 {
+  font-size: 1.7rem;
+  color: var(--white);
+}
+
+.review .box-container .box .user span {
+  color: var(--lite-color);
+  font-size: 1.5rem;
+}
+
+/* end  review section */
+
+
+/* start footer section */
+.banner {
+
+  background             : linear-gradient(#111111b3, #111111b3), url("../imges/banner-bg.jpg") no-repeat;
+  background-size        : cover;
+  background-position    : center;
+  padding                : 3rem 2rem;
+  text-align             : center;
+  background-attachment  :fixed;
+}
+
+.banner .content span {
+  font-size  : 2rem;
+  color      : var(--blue);
+}
+
+.banner .content h3 {
+  margin-top  : 1rem;
+  color       : var(--white);
+  font-size   : 4rem;
+}
+
+.banner .content p {
+  max-width    : 60rem;
+  line-height  : 2;
+  color        : var(--lite-color);
+  font-size    : 1.4rem;
+  margin       : 1rem auto;
+}
+
+
+
+.footer .box-continer {
+  text-align  : center;
+  padding     : 10px;
+}
+
+.footer .box-continer .box {
+  padding  : 1rem 0;
+  width    : 100%;
+  margin   : 10px auto;
+
+}
+
+.footer .box-continer .box i {
+  padding-right  : 0.5rem;
+  color          : var(--blue);
+}
+
+.footer .box-continer .box .logo {
+  font-size       : 2.2rem;
+  color           : var(--white);
+  font-weight     : bolder;
+  padding         : 1rem 0;
+  padding-bottom  : 1rem;
+  display         : block;
+}
+
+.footer .box-continer .box .logo i {
+  color          : var(--blue);
+  padding-right  : 0.5rem;
+}
+
+.footer .box-continer .box h3 {
+  font-size  : 2.2rem;
+  color      : var(--white);
+  padding    : 1rem 0;
+}
+
+.footer .box-continer .box p {
+  font-size    : 1.4rem;
+  color        : var(--lite-color);
+  padding      : 1rem 0;
+  line-height  : 2;
+}
+
+.footer .box-continer .box .share {
+  padding-top  : 1rem;
+}
+
+.footer .box-continer .box .share a {
+  width          : 4.5rem;
+  height         : 4.5rem;
+  line-height    : 4rem;
+  font-size      : 1.7rem;
+  border-radius  : 50%;
+  border         : 2px solid var(--blue);
+  color          : var(--blue);
+  margin-right   : 0.5rem;
+  text-align     : center;
+}
+
+.footer .box-continer .box .share a:hover {
+  color             : #111;
+  background-color  : var(--blue);
+}
+
+.footer .box-continer .box .links {
+  color      : var(--white);
+  display    : block;
+  font-size  : 1.4rem;
+  padding    : 1rem 0;
+}
+
+.footer .box-continer .box .links:hover {
+  color  : var(--blue);
+}
+
+.footer .box-continer .box .links:hover i {
+  padding-right  : 2rem;
+}
+
+.footer .box-continer .box .links i {
+  padding-right  : 0.5rem;
+  color          : var(--blue);
+}
+
+.footer .box-continer .box form .email {
+  width          : 100%;
+  padding        : 1.2rem 1.4rem;
+  background     : none;
+  border         : 2px solid var(--blue);
+  border-radius  : 5rem;
+  font-size      : 1.5rem;
+  color          : var(--lite-color);
+  margin-bottom  : 1rem;
+}
+
+.created {
+  padding           : 2rem 1rem;
+  text-align        : center;
+  background-color  : rgba(17, 17, 17, 0.7);
+  font-size         : 2rem;
+  color             : var(--lite-color);
+}
+
+.created span {
+  color  : var(--blue);
+}
+
+/* end footer section */

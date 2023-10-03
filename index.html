@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awsom  -->
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css.map">
+    <!-- style css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,500&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet">
+    <!-- animate css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- js file  -->
+    <script src="./js/script.js" defer></script>
+
+    <title>travel web site with sass</title>
+  </head>
+
+  <body>
+    <!-- start header section  -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <div data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo"><i class="fas fa-paper-plane"></i>
+            Travel</div>
+        </a>
+        <button class="navbar-toggler text-light fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#main"
+          aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light active p-2 p-lg-3" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light p-2 p-lg-3" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light p-2 p-lg-3" href="#destination">Destination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light p-2 p-lg-3" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light p-2  p-lg-3" href="#gallery">Gallery</a>
+            </li>
+
+
+          </ul>
+
+        </div>
+
+        <div class="search ps-2 pe-2 d-none d-lg-block">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <a class="  d-none d-lg-block bouttn" href="#book">Book Now</a>
+      </div>
+    </nav>
+    <!-- end header section  -->
+
+    <!-- start home section -->
+
+    <section class="home" id="home">
+      <div class="slide">
+          <video class="video-slide active" src="https://player.vimeo.com/external/369069033.sd.mp4?s=57fb64130747198c778f6f5af6e8bc127e46c3f0&profile_id=164&oauth2_token_id=57447761" autoplay muted loop></video>
+          <div class="content active">
+              <h1>Wonderful Island</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                 </p>
+              <a href="#" class="bouttn">Read More</a>
+          </div>
+
+      </div>
+      <div class="slide">
+          <video class="video-slide" src="https://player.vimeo.com/external/371828056.sd.mp4?s=8b4ae75e46e9c3d7fbdcf48fa8170c9d22361378&profile_id=164&oauth2_token_id=57447761" autoplay muted loop></video>
+          <div class="content ">
+              <h1 >Camping Enjoy</h1>
+              <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua.
+                 </p>
+              <a href="#" class="bouttn">Read More</a>
+          </div>
+      </div>
+      <div class="slide">
+          <video class="video-slide" src="https://player.vimeo.com/external/369069188.sd.mp4?s=bb0ca59df2fac5def2fa1d312e959c7098b9784f&profile_id=164&oauth2_token_id=57447761" autoplay muted loop></video>
+          <div class="content">
+              <h1>Road Trip Together</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                  
+                  </p>
+              <a href="#" class="bouttn">Read More</a>
+          </div>
+      </div>
+      <div class="left"><</div>
+              <div class="right">></div>
+  </section>
+    <!-- end home section -->
+
+    <!-- start about section  -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="box-continer row justify-content-around  align-items-center">
+          <div class="col-lg-6  col-md-12  " >
+             
+                  <div class="video-continer"data-aos="fade-right" data-delay="150">
+                      <img src="./imges/about-img1.jpg" class="video" autoplay muted loop></img>
+                  <div class="conroles">
+                      <span class="control-btn" data-src="./imges/about-img1.jpg"></span>
+                      <span class="control-btn" data-src="./imges/about-imge2.jpg"></span>
+                      <span class="control-btn" data-src="./imges/about-imge3.jpg"></span>
+                  </div>
+                  </div>
+            
+            </div>
+             <div class="col-lg-6  col-md-12 " >
+            
+                  <div class="content ">
+                      <span>Why Choose Us?</span>
+                      <h3>Nature's Majesty Awaits You</h3>
+                      <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Unde Fugit Repellat Error Deserunt Nam
+                      Aperiam
+                      Odit Libero Quos Provident. Nostrum?</p>
+                      <a href="#" class="bouttn">Read more</a>
+                  </div>
+            
+             </div>
+        </div>
+        
+      </div>
+  </section>
+    <!-- end about section  -->
+
+    <!-- start destination section -->
+    <section class="destination" id="destination">
+      <div class="container">
+        <div class="heading">
+          <span>Our Destination</span>
+          <h1>Make Yours Destination</h1>
+        </div>
+        <div class="box-continer row">
+          <div class="col-lg-3 col-md-6">
+            <div class="box " data-aos="fade-up" data-aos-delay="150">
+              <div class="imge">
+                <img src="./imges/des-1.jpg" alt="">
+              </div>
+              <div class="content">
+                <h3>Turkey-Trabzon</h3>
+                <p>Enjoy the moderate climate and the calm atmosphere.</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6">
+            <div class="box " data-aos="fade-up" data-aos-delay="300">
+              <div class="imge">
+                <img src="./imges/des-2.jpg" alt="">
+              </div>
+              <div class="content">
+                <h3>Italia-venezia</h3>
+                <p>Enjoy the water and boat tours.</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+
+            <div class="box col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="450">
+              <div class="imge">
+                <img src="./imges/des-3.jpg" alt="">
+              </div>
+              <div class="content">
+                <h3>Germany-rokotzbrücke</h3>
+                <p>Live, breathe, look around and enjoy.</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-3 col-md 6">
+            <div class="box " data-aos="fade-up" data-aos-delay="600">
+              <div class="imge">
+                <img src="./imges/des-4.jpg" alt="">
+              </div>
+              <div class="content">
+                <h3>Indonesia - Bali Island</h3>
+                <p>Enjoy the strangest and most beautiful regions in the world.</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="box " data-aos="fade-up" data-aos-delay="750">
+              <div class="imge">
+                <img src="./imges/des-4.jpg" alt="">
+              </div>
+              <div class="content">
+                <h3>India - Kundla Lake</h3>
+                <p>Enjoy fishing and recreation in nature.</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="box " data-aos="fade-up" data-aos-delay="900">
+              <div class="imge">
+                <img src="./imges/des-6.jpg" alt="">
+              </div>
+              <div class="content">
+                <h3> Caucasus Mountains</h3>
+                <p>Enjoy the heights and the views from it.</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6">
+            <div class="box " data-aos="fade-up" data-aos-delay="1050">
+              <div class="imge">
+                <img src="./imges/des-7.jpg" alt="">
+              </div>
+              <div class="content">
+                <h3>Holland-Utrecht</h3>
+                <p>Enjoy the calm and pure nature of the lake's waters.</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="box col-lg-2 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="1200">
+              <div class="imge">
+                <img src="./imges/des-8.jpg" alt="">
+              </div>
+              <div class="content">
+                <h3>Turkey-Trabzon</h3>
+                <p>Enjoy the moderate climate and the calm atmosphere.</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+    </section>
+    <!-- end destination section -->
+
+    <!-- start sevices section -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="heading">
+          <span>Our Services</span>
+          <h1>Countless Expericences</h1>
+        </div>
+        <div class="box-continer row">
+          <div class="col-lg-4 col-md-6">
+            <div class="box" data-aos="fade-up" data-aos-delay="150">
+              <i class="fas fa-globe"></i>
+              <h3>WoridWide </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laudantium architecto
+                soluta,
+                voluptas fuga dicta,</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box" data-aos="fade-up" data-aos-delay="300">
+              <i class="fas fa-hiking"></i>
+              <h3>Adventures</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laudantium architecto
+                soluta,
+                voluptas fuga dicta,</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box" data-aos="fade-up" data-aos-delay="450">
+              <i class="fas fa-utensils"></i>
+              <h3>Food & Drinks</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laudantium architecto
+                soluta,
+                voluptas fuga dicta,</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box" data-aos="fade-up" data-aos-delay="600">
+              <i class="fas fa-hotel"></i>
+              <h3>Affordable Hotels</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laudantium architecto
+                soluta,
+                voluptas fuga dicta,</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box" data-aos="fade-up" data-aos-delay="750">
+              <i class="fas fa-wallet"></i>
+              <h3>Affordable Price</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laudantium architecto
+                soluta,
+                voluptas fuga dicta,</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box" data-aos="fade-up" data-aos-delay="900">
+              <i class="fas fa-headset"></i>
+              <h3>24/7 Support</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laudantium architecto
+                soluta,
+                voluptas fuga dicta,</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- end services section -->
+
+    <!-- start gallary section -->
+    <section class="gallery " id="gallery">
+      <div class="container">
+        <div class="heading">
+          <span>Our Gallery</span>
+          <h1>We Record Memories</h1>
+        </div>
+        <div class="box-container">
+          <div class="box" data-aos="fade-up" data-aos-delay="150">
+            <img src="./imges/gallery-img-1.jpg" alt="">
+            <div class="overlay">
+              <div class="content">
+                <span>travel spot</span>
+                <p>island</p>
+              </div>
+            </div>
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-delay="300">
+            <img src="./imges/gallery-img-2.jpg" alt="">
+            <div class="overlay">
+              <div class="content">
+                <span>travel spot</span>
+                <p>greenland</p>
+              </div>
+            </div>
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-delay="450">
+            <img src="./imges/gallery-img-3.jpg" alt="">
+            <div class="overlay">
+              <div class="content">
+                <span>travel spot</span>
+                <p>alaska</p>
+              </div>
+            </div>
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-delay="600">
+            <img src="./imges/gallary.jpg" alt="">
+            <div class="overlay">
+              <div class="content">
+                <span>travel spot</span>
+                <p>thiland</p>
+              </div>
+            </div>
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-delay="750">
+            <img src="./imges/gallery-img-5.jpg" alt="">
+            <div class="overlay">
+              <div class="content">
+                <span>travel spot</span>
+                <p>barazil</p>
+              </div>
+            </div>
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-delay="900">
+            <img src="./imges/gallery-img-6.jpg" alt="">
+            <div class="overlay">
+              <div class="content">
+                <span>travel spot</span>
+                <p>maldive</p>
+              </div>
+            </div>
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-delay="1050">
+            <img src="./imges/gallery-img-7.jpg" alt="">
+            <div class="overlay">
+              <div class="content">
+                <span>travel spot</span>
+                <p>iceland</p>
+              </div>
+            </div>
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-delay="1200">
+            <img src="./imges/gallery-img-8.jpg" alt="">
+            <div class="overlay">
+              <div class="content">
+                <span>travel spot</span>
+                <p>alska</p>
+              </div>
+            </div>
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-delay="1350">
+            <img src="./imges/gallery-img-9.jpg" alt="">
+            <div class="overlay">
+              <div class="content">
+                <span>travel spot</span>
+                <p>maldive</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- end gallary section -->
+
+    <!-- start backend section -->
+    <section class="book" id="book">
+      <div class="container">
+        <h2>Find your <span>Ticket Now !</span></h2>
+        <div class="box-continer row">
+          <div class="col-lg-6">
+            <div class="imge">
+              <img src="./imges/undraw_travelers_re_y25a.svg" alt="" srcset="">
+            </div>
+          </div>
+          <div class="col-lg-6 mt-md-3">
+            <div class="book-box">
+              <div class="add-Reservation">
+                <span class="plus">+</span>
+              </div>
+
+              <div class="Reservation-content">
+                <span class="no-Reservation-massage">No Reservation For Show</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-form">
+          <form action="" class="row justify-content-around flex-wrap">
+            <div class=" col-lg-4 col-md-5 col-sm-12">
+              <div class="inputbox nameinput " data-aos="zoom-in" data-aos-delay="150">
+                <span>Name ?</span>
+                <input type="text" placeholder="your name" value="" id="name_t">
+              </div>
+            </div>
+            <div class="  col-lg-4 col-md-5 col-sm-12">
+              <div class="inputbox placeinput " data-aos="zoom-in" data-aos-delay="150">
+                <span>Where To?</span>
+                <input type="text" placeholder="place name" value="" id="place_t">
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-5 col-sm-12">
+              <div class="inputbox dateinput" data-aos="zoom-in" data-aos-delay="300">
+                <span>when?</span>
+                <input type="date" value="" id="data_t">
+              </div>
+            </div>
+            <div class="  col-lg-4  col-md-5 col-sm-12">
+              <div class="inputbox numberinput" data-aos="zoom-in" data-aos-delay="450">
+                <span>How many?</span>
+                <input type="number" placeholder="numbers of traveles" value="" id="num_members_t">
+              </div>
+            </div>
+            <div class=" col-lg-4 col-md-6  save-div">
+              <span type="submit" value="Save" class="bouttn save d-inline-block w-md-100" data-aos="zoom-in"
+                data-aos-delay="600">Save
+              </span>
+            </div>
+            <span class="close-form">X</span>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- end backend section -->
+
+    <!-- start review section -->
+    <section class="review" id="review">
+      <div class="container">
+        <div class="review-content row align-items-center gab">
+        <div class="col-lg-6 col-md-12">
+         <div class="content" data-aos="fade-right" data-aos-delay="300">
+             <span>testimonials</span>
+             <h3>good news from our clients</h3>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda laudantium corporis fugiat quae unde perspiciatis similique ab modi enim consequatur aperiam cumque distinctio facilis sit, debitis possimus asperiores non harum.</p>
+         </div>
+        </div>
+      <div class="col-lg-6 col-md-12">
+         <div class="box-container row" data-aos="fade-left" data-aos-delay="600">
+     
+            <div class="col-lg-6 col-md-6 ">
+             <div class="box">
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
+                 <div class="user">
+                     <img src="./imges/pic-1.png" alt="">
+                     <div class="info">
+                         <h3>john deo</h3>
+                         <span>designer</span>
+                     </div>
+                 </div>
+             </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+             <div class="box">
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
+                 <div class="user">
+                     <img src="./imges/pic-2.png" alt="">
+                     <div class="info">
+                         <h3>john deo</h3>
+                         <span>designer</span>
+                     </div>
+                 </div>
+             </div>
+            </div>
+           <div class="col-lg-6 col-md-6">
+             <div class="box">
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
+                 <div class="user">
+                     <img src="./imges/pic-3.png" alt="">
+                     <div class="info">
+                         <h3>john deo</h3>
+                         <span>designer</span>
+                     </div>
+                 </div>
+             </div>
+           </div>
+           <div class="col-lg-6 col-md-6">
+             <div class="box">
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
+                 <div class="user">
+                     <img src="./imges/blog-3.jpg" alt="">
+                     <div class="info">
+                         <h3>john deo</h3>
+                         <span>designer</span>
+                     </div>
+                 </div>
+             </div>
+           </div>
+     
+        </div>
+      </div>
+        
+         </div>
+      </div>
+        
+     
+     </section>
+    <!-- end review section -->
+
+    <!-- start banner section -->
+
+    <div class="banner" id="banner">
+      <div class="content" data-aos="zoom-in-up" data-aos-delay="300">
+        <span>Start Your Adventures</span>
+        <h3>Let's Explore This World</h3>
+        <p>Now try the taste of adventure and fun, breathe the fresh air, live your lif</p>
+        <a href="#book" class="bouttn">Book Now</a>
+      </div>
+    </div>
+    <!-- end banner section -->
+
+    <!-- start footer section  -->
+    <footer class="footer">
+      <div class="container">
+        <div class="box-continer row">
+          <div class="col-md-6 col-lg-3">
+            <div class="box" data-aos="fade-up" data-aos-delay="450">
+              <a href="#" class="logo"><i class="fas fa-paper-plane"></i> Travel</a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, nulla!</p>
+              <div class="share">
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="box" data-aos="fade-up" data-aos-delay="600">
+              <h3>Quick Links</h3>
+              <a href="#home" class="links"><i class="fas fa-arrow-right"></i>home </a>
+              <a href="#about" class="links"><i class="fas fa-arrow-right"></i>about</a>
+              <a href="#destination" class="links"><i class="fas fa-arrow-right"></i>destination</a>
+              <a href="#services" class="links"><i class="fas fa-arrow-right"></i>services</a>
+              <a href="#gallery" class="links"><i class="fas fa-arrow-right"></i>gallery</a>
+             
+
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="box" data-aos="fade-up" data-aos-delay="750">
+              <h3>Contact Info</h3>
+              <p><i class="fas fa-map"></i>Mumbai, India</p>
+              <p><i class="fas fa-phone"></i>+123-456-7890</p>
+              <p><i class="fas fa-envelope"></i>Shaikhanas@Gmail.Com</p>
+              <p><i class="fas fa-clock"></i>7:00am - 10:00pm</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="box" data-aos="fade-up" data-aos-delay="900">
+              <h3>Newsletter</h3>
+              <p>Subscribe For Latest Updates</p>
+              <form action="">
+                <input type="email" placeholder="Enter your Email" class="email">
+                <input type="submit" class="bouttn" value="Subscribe">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer section  -->
+
+    <div class="created">Created By <span>Eng:Gena kakeh</span>|</div>
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js.map"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init(
+        {
+          duration: 600,
+          offset: 150,
+        }
+      );
+    </script>
+  </body>
+
+</html>
